@@ -4,3 +4,5 @@ fatal: Нет аннотированных меток, которые могут
 Но имеются неаннотированные метки: попробуйте добавить параметр --tags.
 
 /bin/sh: строка 1: ../toolchain/gcc-arm-none-eabi-4_9-2015q1/bin/arm-none-eabi-gcc: не удаётся запустить бинарный файл: Exec format error
+
+/beken378/func/include/wlan_ui_pub.h:11:23: fatal error: wlan_defs.h: No such file or directory compilation terminated.
