@@ -6,3 +6,4 @@ fatal: Нет аннотированных меток, которые могут
 /bin/sh: строка 1: ../toolchain/gcc-arm-none-eabi-4_9-2015q1/bin/arm-none-eabi-gcc: не удаётся запустить бинарный файл: Exec format error
 
 /beken378/func/include/wlan_ui_pub.h:11:23: fatal error: wlan_defs.h: No such file or directory compilation terminated.
+./platforms/bk7231n/bk7231n_os/beken378/func/wpa_supplicant-2.9/wpa_supplicant/
