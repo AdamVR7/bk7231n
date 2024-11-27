@@ -9,3 +9,6 @@ fatal: Нет аннотированных меток, которые могут
 ./platforms/bk7231n/bk7231n_os/beken378/func/wpa_supplicant-2.9/wpa_supplicant/
 beken378/func/hostapd_intf/hostapd_intf.c:115:53: error: subscripted value is neither array nor pointer nor vector
      csa_cnt_offset = settings->counter_offset_beacon[0] + 6 + bcn_info->head_len; // tim_ie_len == 6
+
+../../../sdk/include/lwip/arch.h:48:21: fatal error: arch/cc.h: No such file or directory
+compilation terminated.
