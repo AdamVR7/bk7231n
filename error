@@ -12,3 +12,5 @@ beken378/func/hostapd_intf/hostapd_intf.c:115:53: error: subscripted value is ne
 
 ../../../sdk/include/lwip/arch.h:48:21: fatal error: arch/cc.h: No such file or directory
 compilation terminated.
+
+beken378/driver/entry/arch_main.c:104:3: warning: implicit declaration of function 'wdt_ctrl' [-Wimplicit-function-declaration]
