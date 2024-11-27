@@ -14,3 +14,6 @@ beken378/func/hostapd_intf/hostapd_intf.c:115:53: error: subscripted value is ne
 compilation terminated.
 
 beken378/driver/entry/arch_main.c:104:3: warning: implicit declaration of function 'wdt_ctrl' [-Wimplicit-function-declaration]
+
+beken378/driver/fft/fft.c:97:27: error: 'IRQ_FFT' undeclared (first use in this function)
+     intc_service_register(IRQ_FFT, PRI_IRQ_FFT, fft_isr);
