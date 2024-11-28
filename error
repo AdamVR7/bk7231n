@@ -13,6 +13,4 @@ beken378/func/hostapd_intf/hostapd_intf.c:115:53: error: subscripted value is ne
 ../../../sdk/include/lwip/arch.h:48:21: fatal error: arch/cc.h: No such file or directory
 compilation terminated.
 
-beken378/driver/entry/arch_main.c:104:3: warning: implicit declaration of function 'wdt_ctrl' [-Wimplicit-function-declaration]
-
-beken378/os/FreeRTOSv9.0.0/FreeRTOS/Source/portable/Keil/ARM968es/port.c:150:1: error: unknown type name 'FUNCTICKPTR'
+platforms/bk7231n/toolchain/windows/gcc-arm-none-eabi-4_9-2015q1/bin/../lib/gcc/arm-none-eabi/4.9.3\libgcc.a(unwind-arm.o): In function `get_eit_entry':
