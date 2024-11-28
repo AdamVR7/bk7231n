@@ -19,3 +19,5 @@ beken378/driver/fft/fft.c:97:27: error: 'IRQ_FFT' undeclared (first use in this 
      intc_service_register(IRQ_FFT, PRI_IRQ_FFT, fft_isr);
 
 make[1]: *** [application.mk:808: beken378/driver/fft/fft.o] Ошибка 1
+
+make: *** Нет правила для сборки цели «clean».  Останов.
