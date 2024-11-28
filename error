@@ -15,7 +15,4 @@ compilation terminated.
 
 beken378/driver/entry/arch_main.c:104:3: warning: implicit declaration of function 'wdt_ctrl' [-Wimplicit-function-declaration]
 
-beken378/driver/fft/fft.c:97:27: error: 'IRQ_FFT' undeclared (first use in this function)
-     intc_service_register(IRQ_FFT, PRI_IRQ_FFT, fft_isr);
-
-make[1]: *** Нет правила для сборки цели «beken378/func/hostapd-2.5/src/crypto/bk_md5.c», требуемой для «beken378/func/hostapd-2.5/src/crypto/bk_md5.o».  Останов.
+beken378/os/FreeRTOSv9.0.0/FreeRTOS/Source/portable/Keil/ARM968es/port.c:150:1: error: unknown type name 'FUNCTICKPTR'
