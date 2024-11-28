@@ -18,6 +18,5 @@ beken378/driver/entry/arch_main.c:104:3: warning: implicit declaration of functi
 beken378/driver/fft/fft.c:97:27: error: 'IRQ_FFT' undeclared (first use in this function)
      intc_service_register(IRQ_FFT, PRI_IRQ_FFT, fft_isr);
 
-make[1]: *** [application.mk:808: beken378/driver/fft/fft.o] Ошибка 1
-
-make: *** Нет правила для сборки цели «clean».  Останов.
+beken378/driver/spi/spi.c:583:12: warning: unused variable 'value' [-Wunused-variable]
+     UINT32 value;
