@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -I./sdk/include -Wall -O2
-LDFLAGS = -L./sdk/lib -lgpio -lwifi -lmqtt
+LDFLAGS = -L./sdk/lib -lgpio -lwifi -lmqtt -lsystem
 
 SRC = main.c
 OBJ = $(SRC:.c=.o)
@@ -15,4 +15,3 @@ firmware: $(OBJ)
 
 clean:
 	rm -f *.o firmware
-
