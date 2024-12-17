@@ -1,5 +1,6 @@
 arm-none-eabi-gcc: error: unrecognized -mcpu target: cortex-m3 -mthumb -o2 -wall -ffunction-sections -fdata-sections
-arm-none-eabi-gcc (15:12.2.rel1-1) 12.2.1 20221205
+arm-none-eabi-gcc: error: missing argument to '-march='
+
 
 
 
