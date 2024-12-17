@@ -18,6 +18,15 @@ https://developer.arm.com/Tools%20and%20Software/GNU%20Toolchain
 
 mkdir -p sdk/include sdk/lib
 touch sdk/include/{gpio.h,wifi.h,mqtt.h,os_api.h,system.h}
+gcc -c gpio.c -o gpio.o
+ar rcs sdk/lib/libgpio.a gpio.o
+
+gcc -c wifi.c -o wifi.o
+ar rcs sdk/lib/libwifi.a wifi.o
+
+gcc -c mqtt.c -o mqtt.o
+ar rcs sdk/lib/libmqtt.a mqtt.o
+
 
 
 
