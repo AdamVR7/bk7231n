@@ -1,20 +1,5 @@
-make[1]: *** [application.mk:1147: application] Ошибка 1
-fatal: не найден git репозиторий (или один из его каталогов вплоть до точки монтирования /cygdrive)
-fatal: Нет аннотированных меток, которые могут описать «9d92cc80c5088d72f024d1db20682f4e6448b08d».
-Но имеются неаннотированные метки: попробуйте добавить параметр --tags.
+arm-none-eabi-gcc: error: unrecognized -mcpu target: cortex-m3 -mthumb -o2 -wall -ffunction-sections -fdata-sections
 
-/bin/sh: строка 1: ../toolchain/gcc-arm-none-eabi-4_9-2015q1/bin/arm-none-eabi-gcc: не удаётся запустить бинарный файл: Exec format error
-
-/beken378/func/include/wlan_ui_pub.h:11:23: fatal error: wlan_defs.h: No such file or directory compilation terminated.
-./platforms/bk7231n/bk7231n_os/beken378/func/wpa_supplicant-2.9/wpa_supplicant/
-beken378/func/hostapd_intf/hostapd_intf.c:115:53: error: subscripted value is neither array nor pointer nor vector
-     csa_cnt_offset = settings->counter_offset_beacon[0] + 6 + bcn_info->head_len; // tim_ie_len == 6
-
-../../../sdk/include/lwip/arch.h:48:21: fatal error: arch/cc.h: No such file or directory
-compilation terminated.
-
-platforms/bk7231n/toolchain/windows/gcc-arm-none-eabi-4_9-2015q1/bin/../lib/gcc/arm-none-eabi/4.9.3\libgcc.a(unwind-arm.o): In function `get_eit_entry':
-https://developer.arm.com/Tools%20and%20Software/GNU%20Toolchain
 
 mkdir -p sdk/include sdk/lib
 touch sdk/include/{gpio.h,wifi.h,mqtt.h,os_api.h,system.h}
