@@ -27,6 +27,10 @@ ar rcs sdk/lib/libwifi.a wifi.o
 gcc -c mqtt.c -o mqtt.o
 ar rcs sdk/lib/libmqtt.a mqtt.o
 
+main.c:(.text.startup+0x9): undefined reference to `system_init'
+/usr/bin/ld: main.c:(.text.startup+0xa5): undefined reference to `os_delay'
+
+
 
 
 
