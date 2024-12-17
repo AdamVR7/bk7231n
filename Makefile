@@ -1,17 +1,19 @@
-CC = gcc
-CFLAGS = -I./sdk/include -Wall -O2
-LDFLAGS = -L./sdk/lib -lgpio -lwifi -lmqtt -lsystem
+CC = arm-none-eabi-gcc
+OBJCOPY = arm-none-eabi-objcopy
 
-SRC = main.c
+CFLAGS = -mcpu=cortex-m3 -mthumb -O2 -Wall -I./include
+LDFLAGS = -T link.ld
+
+SRC = main.c system.c
 OBJ = $(SRC:.c=.o)
 
-all: firmware
+all: firmware.elf firmware.bin
 
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+firmware.elf: $(OBJ)
+    $(CC) $(CFLAGS) $(OBJ) -o firmware.elf $(LDFLAGS)
 
-firmware: $(OBJ)
-	$(CC) $(OBJ) -o firmware $(LDFLAGS)
+firmware.bin: firmware.elf
+    $(OBJCOPY) -O binary firmware.elf firmware.bin
 
 clean:
-	rm -f *.o firmware
+    rm -f *.o firmware.elf firmware.bin
