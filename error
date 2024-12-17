@@ -18,6 +18,7 @@ https://developer.arm.com/Tools%20and%20Software/GNU%20Toolchain
 
 mkdir -p sdk/include sdk/lib
 touch sdk/include/{gpio.h,wifi.h,mqtt.h,os_api.h,system.h}
+
 gcc -c gpio.c -o gpio.o
 ar rcs sdk/lib/libgpio.a gpio.o
 
@@ -30,8 +31,7 @@ ar rcs sdk/lib/libmqtt.a mqtt.o
 gcc -c system.c -o system.o
 ar rcs sdk/lib/libsystem.a system.o
 
-main.c:(.text.startup+0x9): undefined reference to `system_init'
-/usr/bin/ld: main.c:(.text.startup+0xa5): undefined reference to `os_delay'
+sudo apt-get install cmake make gcc-arm-none-eabi build-essential
 
 
 
