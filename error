@@ -33,6 +33,11 @@ ar rcs sdk/lib/libsystem.a system.o
 
 sudo apt-get install cmake make gcc-arm-none-eabi build-essential
 
+set(TARGET_BOARD BK7231N)
+set(ENABLE_MQTT ON)
+set(ENABLE_GPIO ON)
+
+
 
 
 
