@@ -17,13 +17,13 @@ int main(void) {
 
     // Инициализация Wi-Fi
     wifi_init();
-    if (wifi_connect("MySSID", "MyPassword") == 1) {
+    if (wifi_connect("MySSID", "123456789!") == 1) {
         printf("Wi-Fi connected!\n");
     }
 
     // Настройка MQTT клиента
     mqtt_client_t mqtt_client;
-    mqtt_init(&mqtt_client, "broker.hivemq.com", 1883, "BK7231N_Client");
+    mqtt_init(&mqtt_client, "192.168.1.28", 1883, "BK7231N_Client");
     if (mqtt_connect(&mqtt_client)) {
         printf("Connected to MQTT broker!\n");
     }
